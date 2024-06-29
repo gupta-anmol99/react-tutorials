@@ -22,3 +22,6 @@ Let's define the rules-
 2. The name of the functions inside the components should start with an **upper case letter**. If not this will throw an error.
 3. Although not necessary, we also capitalize the first letter of the name fo the file containing components.
 4. A component cannot return more than one element. So we use fragment, ie, <> to encompass everything we want in a single tag.
+
+## 02customReact
+In this project we make 
