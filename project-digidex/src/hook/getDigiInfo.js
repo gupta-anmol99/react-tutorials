@@ -3,26 +3,34 @@ import { useEffect, useState, useCallback } from "react";
 function getDigiInfo() {
   const [data, setData] = useState({});
 
-
-  useEffect(() => {
+  const fetchDigiData = useCallback(() => {
     fetch("https://digimon-api.vercel.app/api/digimon")
       .then((res) => res.json())
       .then((res) => setData(res));
   }, []);
 
-  let newData = {}
+  useEffect(fetchDigiData, []);
+
+
+//   useEffect(() => {
+//     fetch("https://digimon-api.vercel.app/api/digimon")
+//       .then((res) => res.json())
+//       .then((res) => setData(res));
+//   }, []);
+
+  let newData = {};
 
   for (let key in data) {
     if (data.hasOwnProperty(key)) {
       let item = data[key];
       newData[item.name] = {
         img: item.img,
-        level: item.level
+        level: item.level,
       };
     }
   }
 
-  return newData
+  return newData;
 }
 
 export default getDigiInfo;
