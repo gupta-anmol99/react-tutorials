@@ -11,12 +11,15 @@ function getDigiInfo() {
 
   useEffect(fetchDigiData, []);
 
+    // useEffect(() => {
+    //   fetch("https://digimon-api.vercel.app/api/digimon")
+    //     .then((res) => res.json())
+    //     .then((res) => setData(res));
+    // }, []);
 
-//   useEffect(() => {
-//     fetch("https://digimon-api.vercel.app/api/digimon")
-//       .then((res) => res.json())
-//       .then((res) => setData(res));
-//   }, []);
+  // We cannot use fetch without useEffect as we need to run fetch only after every component is rendered properly.
+
+ 
 
   let newData = {};
 
