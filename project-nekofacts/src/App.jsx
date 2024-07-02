@@ -35,7 +35,7 @@ function App() {
             onChange={(e) => onNumberChange(Number(e.target.value))}
           />
         </div>
-        <div className=" flex flex-wrap card-container">{cards}</div>;
+        <div className=" flex flex-wrap card-container">{cards}</div>
       </>
     );
   }

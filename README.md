@@ -5,7 +5,7 @@ https://vitejs.dev/guide/
 
 ## 01vitereact
 
-1. This is an introduction to the vite and how to create an app.
+1. This is an introduction to the vite and how to create an app. 
 
 2. We create this using the command- 
 ```npm create vite@latest```
